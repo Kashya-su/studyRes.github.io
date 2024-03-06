@@ -16,7 +16,9 @@
 
 .navbar li {
     float: left;
+    margin-right: 150px; /* Add margin to create space between subjects */
 }
+
 
 .navbar li a {
     display: block;
