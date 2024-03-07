@@ -1,0 +1,1239 @@
+/* general use */
+html {
+	text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;	
+    -moz-text-size-adjust: none !important;
+    -o-text-size-adjust: none !important;	
+}
+
+body {
+    color: #595959; /*KS - Changed July 21,2019 from #717171 for Accessibility*/
+    font-family: Open Sans, Helvetica, Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight: 400;
+	line-height: 1.3;
+	font-height: 85%;
+	letter-spacing: 0.5px;	
+	/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+	/*font-size: 0.75em;*/
+	margin: 0 auto;
+	/*width: 960px; /* Feb 10, 2010 widened 188px */
+	width: 972px;
+	/*background: #e5e1d8; removing this background - it causes error with colour*/
+    background-image: url("/!images/bodybackground.png");
+ 	background-color: #FFF;
+	text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;	
+    -moz-text-size-adjust: none !important;
+    -o-text-size-adjust: none !important;	
+}
+a img {
+	border: none;
+}
+
+strong {
+	font-weight: 600;
+	color: #494949; /*KS - Changed July 21,2019 from #616161 for Accessibility*/
+}
+figure,figcapton{
+    display: table;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    float: right;
+}
+figure2,figcapton2{
+    display: table;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    float: left;
+}
+.lineabove {
+	border-top: 1px solid #FFFFFF;
+	padding-top: 10px;
+}
+.imageleft {
+	float: left;
+	margin: 0px 10px 10px 0; 
+}
+.imageleft2 {
+	float: left;
+	margin: 0px 10px 1px 0;
+}
+.imageright {
+	float: right;
+	margin: 0px 0 10px 10px;   
+}
+.img-container6 {
+  float: left;
+  width: 15%;
+  padding: 6px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* July 28, 2008; Added by JP after altering homepage text */
+.homepageimageleft {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+/* center an image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clear {
+	clear: both;
+}
+.none {
+	display: none;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+.column4 {
+    float: left;
+    width: 24%;
+    padding: 2px;
+    text-align: center;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*acessible green link and normal text highlight colour*/
+.highlight {
+    background-color:#FFFF1A;
+}
+
+.alert {
+  padding: 10px;
+  border-style: solid;
+  background-color: lightyellow;
+  color: darkslategrey;
+  text-align: center
+}
+.tab { 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.pastContests {
+    float: left;
+  	margin-left: 10px;
+  	margin-right: 10px;
+}
+
+/* RM - added Jan 16, 2023 to fix skip to content link for screenreader and keyboard users
+   Source: https://www.nomensa.com/blog/how-improve-web-accessibility-hiding-elements */
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip; rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 
+} 
+
+.hide-element-focusable:active,
+.hide-element-focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* document container */
+#container {
+	background: url(../!images/shadow_sides.gif) repeat-y center top;
+}
+/* body container */
+#bodycontainer {
+	background: url(../!images/shadow_bottom.gif) no-repeat center bottom;
+	padding: 0 6px 6px 6px;
+}
+/* Header: includes UW bar, search, department title  */	
+#header {
+	/* height: 210px; */ /*Feb 2011 KS changed the height to 110px from 78px as per CLF - KS modified again to accomodate new UW logo and clf change Sept 2014*/ /*July 2015 KS modified from 130 to 175px to match UW clf*/
+	width: 100%;
+	/*padding: 5px 0 5px 0;*/
+	padding: 0px 0px 0px 0px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #ffffff; /*S changed from 4EC0D9 2016 redesign*/
+}
+#clfbar {
+	background: #000;
+	height: 85px; /*July 2015 KS changed height to 100px from 60px */
+	position: relative;	
+}
+#uw_wordmark {
+	/*width: 120px;*/
+	position: absolute;
+	left: -1px;
+	padding: 20px 0px 20px 10px; /*July 2015 KS changed location to match UW webpages*/
+	margin: 0;
+}
+#searchbox {
+	color: #fff;
+	position: absolute;
+	right: 0px;
+	margin: 10px 8px 8px 0px; /* July 2015 KS changed margin to 10px...... */
+	/*width: 320px; Changed by KAS May 15/14*/
+	width: 355px; /*July 2015 KS changed width to 355px to accomodate new description for CEMC Site & UW Sites - search pull down menu*/
+	font-size: 12px;
+	top: 1px;
+}
+/*#searchbox, #wordmark { 
+	text-align: right;
+}*/
+#searchterm {
+	background: #666;
+	color: #fff;
+	height: 18px;
+	font-size: 12px;
+}
+fieldset {
+   border: 0;
+   margin: 0;
+   padding: 0;
+   }
+#submit {
+	border: 0;
+	/* position: relative; */
+	top: 10px;
+	background-image: url(https://uwaterloo.ca/math/profiles/uw_base_profile/themes/uw_core_theme/images/search-arrows.png);
+	background-color: #000000;
+	background-position: -18px 0;
+	width: 18px;
+	height: 18px;
+}
+/*#wordmark {
+	 margin: 21px 0 0;
+	 margin-left: 0;
+	 border: none;
+	 }*/
+
+#wordmark {
+	/*border-top: 1px solid #CCC;*/
+	margin-left: 10px; /*July 2015 KS changed wordmark and left aligned wording*/
+	/*margin-left: 35px; /* July, 2008 JP changed from 175px to better centre title. */ /*Changed again Feb 2011 KS from 170px to right align title*/
+	padding-top: 7px; 	/* July, 2008 JP added to better centre title. */ /*Changed again May 2011 KS to 7px to centre title8 */
+}
+
+/*#wordmark {
+	border-top: 1px solid #CCC;
+	margin-left: 35px; 
+	padding-top: 5px; 	
+}*/
+
+#wordmark h1 {
+	margin: 10px 0 0 0;
+	padding-right: 3px;
+}
+#wordmark div {
+	margin: 10px 0 0 0;
+	padding-right: 3px;
+}
+#uwlogo {
+	position: absolute;
+	margin-top: 4px;
+	margin-left: 22px;
+}
+form#search { 
+ 	margin: 0px 8px 3px 0;
+}
+input.google {
+	border: 1px solid #666;
+	font-size: 11px;
+}
+/* primary nav */
+#primarynavarea {
+	width: 182px; /* Feb 2011 KS changed width from 170px to widen site with new banner*/
+	float: left;
+}
+#primarynavarea ul, #primarynavarea li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul#primarynav {
+	background: #e9f6bc url(../!images/leftnav_image.jpg) no-repeat left bottom;
+	padding: 5px 0 281px 0;
+}
+#primarynav a {
+	text-decoration: none;
+	color: #252525;
+	font-size: 85%;
+}
+#primarynav li {
+	border-bottom: 1px solid #CEE280;
+}
+#primarynav li a {
+	display: block;
+	padding: 7px 5px 7px 15px;
+	/*background: url(../!images/navarrow_normal.gif) no-repeat 5px 0.90em;*/
+}
+#primarynav li a:hover {
+	background: #147599 url(../!images/navarrow_hover.gif) no-repeat 5px 0.90em; /*KS - Changed July 21,2019 from #4EC0D9 for Accessibility*/
+	color: #FFFFFF;
+}
+#primarynavsub ul {
+	border: 1px solid #FF0000;
+}
+#primarynavsub li {
+	border-top: 1px solid #CEE280;
+	border-bottom: none;
+}
+#primarynavsub li a {
+	padding-left: 25px;
+	background: #FFFFFF;
+	/*background: #e9f6bc url(../!images/navarrow_normal.gif) no-repeat 15px 0.75em;*/
+}
+#primarynavsub li a:hover {
+	background: #147599 url(../!images/navarrow_hover.gif) no-repeat 15px 0.75em; /*KS - Changed July 21,2019 from #4EC0D9 for Accessibility*/
+}
+/* languages */
+ul#languages {
+	margin-top: -240px; /* pull inside background attached to primary nav */
+	min-height: 240px; /* make sure it doesn't cross footer in non-IE browsers */
+	/*Changed margin-top from -266 and min-height from 266 */
+	text-align: center;
+}
+ul#languages li {
+	display: block; /* June 18, 2008 (JP,TB) - Changed from inline so only one button displays per page */
+}
+/* collage */
+#collage {
+	/*border-bottom: 1px solid #ffffff;*/ /*KS changed from 4EC0D9 2016 redesign* KS deleted 2019*/
+	float: left;
+}
+/* content bar */
+#contentbar {
+	/*background: #51C1D9 url(../!images/bar_image.jpg) repeat-x left top;*/
+	float: left; 	/* August 6, 2008 - Added by Graphics to fix IE 6.0 display problems. */
+	width: 600px;	/* August 6, 2008 - Added by Graphics to fix IE 6.0 display problems. */
+					/* Feb 10, 2010 widened 188px */ 
+					/* 2016 - KS shortened 188px to fix display problems*/
+	/* color:#FFFFFF;  August 6, 2008 - Removed by Graphics when fixing IE 6.0 display problems. */
+}
+#contentbar h1 {
+margin: 0 10px 0 10px;
+padding: 0;
+letter-spacing: 0.5px;
+/*font-height: 85%;*/
+font-weight: normal;
+color: #147599; /*KS - Changed July 21,2019 from #4ec0d9 for Accessibility*/
+/*changed from color: #30a8c2; - new web design - KS*/
+font-size: 160%;
+line-height: 1.2em; /* August 6, 2008 - Removed by Graphics when fixing IE 6.0 bug. */
+}
+#contentbar h2 {
+	/*padding: 1px 0; KS changed from 4px to 1px, 2016*/
+	margin: 0 10px 0 10px; /* August 6, 2008 - Changed from 0 10px 0 180px; by Graphics to fix IE6.0 problem. */
+	font-weight: normal;
+	font-size: 160%;
+	color: #147599; /*KS - Changed July 21,2019 from #4ec0d9 for Accessibility*/
+	/*changed from color: #30a8c2; - new web design - KS*/
+}
+/* image banner */
+/* June 23, 2008, Added by JP for pages with an image banner and right column content */
+#imagebanner {
+	float: left;
+}
+/* primary content */
+#primarycontarea {
+	width: 591px; /* Feb 10, 2010 widened 188px */
+	float: right;
+}
+#primarycontent {
+	padding: 0px 10px 10px 0px;
+	font-height: 85%;
+	line-height: 1.3;
+    color: #595959; /*KS - Changed July 21,2019 from #414141 for Accessibility*/
+}
+#primarycontent h1 {
+	margin: 0px;
+	padding: 2;
+	letter-spacing: 0.5px;
+	font-height: 85%;
+	font-weight: normal;
+	color: #147599; /*KS - Changed July 21,2019 from #4ec0d9 for Accessibility*/
+	/*changed from color: #30a8c2; - new web design - KS*/
+	font-size: 140%;
+	line-height: 1.2em; /* August 6, 2008 - Removed by Graphics when fixing IE 6.0 bug. */
+}
+
+
+
+#primarycontent h2 {
+	margin-bottom: -9px;
+	margin-top: 13px;
+	padding: 0;
+	letter-spacing: 0.5px;
+	font-height: 85%;
+	font-weight: 105%;
+	color: #595959; /*KS - Changed July 21,2019 from #616161 for Accessibility*/
+	font-size: 115%; /* June 27, 2008 - Changed from 110% by JP and KS */
+}
+
+#primarycontent h3 {
+	margin-bottom: -11px;
+	padding: 0;
+	letter-spacing: 0.5px;
+	font-height: 85%;
+	font-weight: bold;
+	color: #595959; /*KS - Changed July 21,2019 from #616161 for Accessibility*/
+	font-size: 100%; /* June 27, 2008 - Changed from 110% by JP and KS */
+	/*font-style: italic;*/
+}
+#primarycontent a {
+	text-decoration:underline;
+	color: #627a31; /*KS - Changed July 21,2019 from #627907 for Accessibility*/
+}
+#primarycontent a:hover {
+	text-decoration:underline;
+	color: #147599; /*KS - Changed July 21,2019 from #32afca for Accessibility*/
+	}
+
+/* right content/nav */
+#secondnavarea {
+	width: 177px;
+	/* background: #CEE280 url(../!images/rightnav_image.jpg) repeat-x left top; */
+	background: #e9f6bc url(../!images/rightnav_image.jpg) repeat-x left top;
+	font-height: 85%;
+	line-height: 1.3;
+	float: right;
+}
+#secondnav {
+	padding: 10px;
+}
+
+#facebook {
+    float: right;
+    margin-top: -50px;
+    width: 177px;
+}
+
+#secondnav h1 {
+	margin: 0px;
+	margin-bottom: -5px;
+	padding: 0;
+	/*letter-spacing: 0.5px;
+	font-height: 85%;
+	font-weight: normal;*/
+	color: #147599; /*KS - Changed July 21,2019 from #4ec0d9 for Accessibility*/
+	/*changed from color: #30a8c2; - new web design - KS*/
+	font-size: 150%;
+	font-weight: normal;
+	line-height: 1.2em; /* August 6, 2008 - Removed by Graphics when fixing IE 6.0 bug. */
+}
+/*#secondnav h1 {
+	margin: 0 0 14px 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 110%;
+}*/
+#secondnav h1 strong {
+	font-weight: bold;
+	color: #147599; /*KS - Changed July 21,2019 from #4ec0d9 for Accessibility*/
+	/*changed from color: #30a8c2; - new web design - KS*/
+	
+}
+#secondnav p {
+	margin: 0;
+	padding: 10px 0 6px 0;
+}
+#secondnav ul, #secondnav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*font-size: 93%;*/
+	color: #252525;
+}
+#secondnav li {
+	margin: 0 0 14px 0;
+	background: url(../!images/navarrow_normal.gif) no-repeat 0px 0.30em;
+	padding-left: 15px;
+	font-size: 85%;
+}
+#secondnav a {
+	color: #252525;
+	text-decoration: none;
+	
+}
+#secondnav a:hover {
+	color: #147599; /*KS - Changed July 21,2019 from #298ca@ for Accessibility*/
+	text-decoration: underline;
+}
+/* footer */
+#footer {
+	clear: both;
+	border-top: 1px solid #ffffff;/*New design 2016 - KS remove to suit new look*/
+	border-bottom: 7px solid #147599; /*KS - Changed July 21,2019 from #4ec0d9 for Accessibility*/
+	background: url(../!images/footer_image.gif) repeat-y center top;
+	padding-left: 192px; /*Feb 2011 KS added 12 px to move the logo over to match the left menu widening*/
+	font-size: 88%;
+	line-height: 135%;
+}
+#departmentaddress p {
+	margin: 10px 0 5px 85px;
+}
+#departmentaddress p.links {
+	margin: 0 0 10px 85px;
+}
+#departmentaddress p.links, #departmentaddress p.links a {
+	color: #147599; /*KS - Changed July 21,2019 from #1490AB for Accessibility*/
+	text-decoration: none;
+}
+#departmentaddress p.links a:hover {
+	text-decoration: underline;
+}
+#departmentaddress p .logo {
+	float: left;
+	margin-left: -85px;
+}
+
+
+
+img.facebooklogo {
+float: right;
+	text-align: right;
+	margin: 20px 10px 2px 2px;
+}
+img.twitterlogo {
+float: right;
+	text-align: right;
+	margin: 20px 45px 2px 2px;
+}
+
+img.campaignlogo {
+	float: right;
+	text-align: right;
+	margin: 10px 20px 2px 2px;/*changed margin to 80px from 20px*/
+}
+
+/*img.campaignlogo {
+	float: right;
+	text-align: right;
+	margin: 20px 20px 2px 2px;
+}*/
+	
+/* big table */ 	
+.bigtable {
+	margin-top: 0px;
+	width: 755px;	/* Feb 10, 2010 widened 188px */
+	border: 1px solid #BBBBBB; /* July 8, 2008 - J.P. changed all table borders from #707070 */
+	}
+
+.bigtable td {
+	background-color: #ffffff; /* July 4,2016 - KS changing bg colour to #ffffff from  #cee280; for new look and feel*/
+	font-size: 100%;
+	border: 1px solid #BBBBBB;
+	padding: 5px;
+	color: #595959;/* July 4,2016 - KS changing font colour to #505050 from  #363636; for new look and feel*/ /*KS - Changed July 21,2019 from #505050 for Accessibility*/
+	}
+
+.bigtable2 {
+	font-size: 92%;
+    margin-top: 0px;
+	width: 755px;	/* Feb 10, 2010 widened 188px */
+	border: 1px solid #BBBBBB; /* July 8, 2008 - J.P. changed all table borders from #707070 */
+	}
+
+.bigtable2 td {
+	background-color: #ffffff; /* July 4,2016 - KS changing bg colour to #ffffff from  #cee280; for new look and feel*/
+	font-size: 92%;
+	border: 1px solid #BBBBBB;
+	padding: 5px;
+	color: #595959;/* July 4,2016 - KS changing font colour to #505050 from  #363636; for new look and feel*/ /*KS - Changed July 21,2019 from #505050 for Accessibility*/
+	}
+
+
+.outertable {
+	margin-top: 0px;
+	width: 755px;	
+	border: 1px solid #BBBBBB; 
+	}
+
+.outertable td {
+	background-color: #ffffff; 
+	font-size: 100%;
+	border: 1px solid #BBBBBB;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #595959;
+	}
+
+.nestedtable {
+	border-style: hidden !important;
+	border-collapse: collapse;
+	border: 1px solid #BBBBBB;
+	}
+
+.nestedtable td {
+	border-style: hidden;
+	border-collapse: collapse;
+	border: 1px dotted #BBBBBB;
+	width: 230px !important;
+	height:22px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+	
+	}
+
+
+/*.bigtable td {
+	background-color: #e9f6bc;
+	font-size: 100%;
+	border: 1px solid #BBBBBB;
+	padding: 5px;
+	color: #363636;
+	}*/
+/* vertical big table */
+/* June 25, 2008 - Added by Terry for use with vertical tables (with column headings) */
+.vbigtable {
+	margin-top: 0px;
+	width: 755px;	/* Feb 10, 2010 widened 188px */
+	border: 1px solid #BBBBBB;
+	}
+
+.vbigtable td { 
+	font-size: 100%;
+	border: 1px solid #BBBBBB;
+	padding: 5px;
+	color: #595959; /*KS - Changed July 21,2019 from #506060 for Accessibility*/
+	}		
+/* small table */
+/* June 24, 2008 - Added by JP for use on pages with right-column content. */
+.smalltable {
+	margin-top: 0px;
+	width: 581px;	/* Feb 10, 2010 widened 188px */
+	border: 1px solid #BBBBBB;
+	}
+
+.smalltable td {
+	background-color: #FFFFFF; /*changing from #e9f6bc new web design*/
+	/*changing from background-color: #e9f2c6;*/
+	font-size: 100%;
+	border: 1px solid #BBBBBB; 
+	padding: 5px;
+	color: #595959; /*changing from #363636 new web design*//*KS - Changed July 21,2019 from #505050 for Accessibility*/
+	}	
+
+.smallertable {
+	margin-top: 0px;
+	width: 560px;	/* Feb 10, 2010 widened 188px */
+	border: 1px solid #BBBBBB;
+	}
+
+.smallertable td {
+	background-color: #FFFFFF; /*changing from #e9f6bc new web design*/
+	/*changing from background-color: #e9f2c6;*/
+	font-size: 100%;
+	border: 1px solid #BBBBBB; 
+	padding: 5px;
+	color: #595959; /*changing from #363636 new web design*//*KS - Changed July 21,2019 from #505050 for Accessibility*/
+	}	
+/* vertical small table */
+/* June 25, 2008 - Added by Terry for use with vertical tables (with column headings) */
+.vsmalltable {
+	margin-top: 0px;
+	width: 581px;	/* Feb 10, 2010 widened 188px */
+	border: 1px solid #BBBBBB; /*changing from #BBBBBB new web design*/
+	}
+
+.vsmalltable td {
+	font-size: 100%;
+	border: 1px solid #BBBBBB; /*changing from #BBBBBB new web design*/
+	padding: 5px;
+	color: #595959; /*changing from #363636 new web design*//*KS - Changed July 21,2019 from #505050 for Accessibility*/
+	}	
+	
+/* Used to highlight top row of a horizontal table */	
+.greenbar td {
+	background-color: #e9f6bc; /*changing from #cee280 new web design*/
+	font-weight: bold; 
+	}
+/* Used for vertical tables */
+/* For example:	<table cellspacing="0" class="vsmalltable" summary="Gauss Grade 7 Archive">
+                  <colgroup>
+                  <col class="darkgreen" />
+                  <col class="lightgreen" />
+				  ...
+                  </colgroup>
+                  <tr>
+                    <td><strong>Contests</strong></td> ...
+
+*/
+.darkgreen {
+	background-color: #e9f6bc; /*changing from #cee280 new web design*/
+	}	
+.lightgreen {
+	background-color: #ffffff; /*changing from #e9f6bc new web design*/
+	}
+
+/* This class makes tables transparent
+   July 2, 2008 - Added by Terry        */
+.noborder {
+	border: none;
+	}
+.backtotop {
+	padding-bottom: 5px;
+}
+
+.faqlist {
+	color:#147599; /*KS - Changed July 21,2019 from #43a6bd for Accessibility*/
+	font-size:120%;
+	font-weight:normal;
+	line-height:1.2em;
+	margin:0;
+	padding:0;
+}
+
+.faqquestion {
+line-height: 175%
+}
+
+.code {font-family: courier;}
+
+
+.pquoter {
+    float: right;
+    width: 200px;
+    background: #eee;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    padding: 13px;
+    margin: 0 10px 10px 0;
+}
+.pquoter2 {
+    float: right;
+    width: 250px;
+    background: #eee;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    padding: 13px;
+    margin: 0 10px 10px 0;
+}
+.pquoter3 {
+    float: right;
+    width: 250px;
+    background: #eee;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    padding: 13px;
+    margin: 0 10px 10px 0;
+}
+.pquoter4 {
+    float: left;
+    width: 275px;
+    color: white;
+    background: #147599;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    line-height: 1.25;
+    font-size: 1.4em;
+    padding: 1.25em;
+    margin: 0 10px 10px 0;
+}
+.pquotel {
+    float: left;
+    width: 200px;
+    background: #eee;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    padding: 13px;
+    margin: 0 10px 10px 0;
+}
+blockquote1 {
+    margin: 0; /* gets rid of the default blockquote margin */
+}
+
+
+#courseware91011 #lessonsList {
+  padding-left: 0px;  
+  overflow: hidden;
+  display: table-row;
+  border: 1px solid #BBBBBB;
+}
+
+#courseware91011 #lessonsList > ul {
+  border: 1px solid #BBBBBB;
+}
+
+#courseware91011 #lessonsList > li {
+  list-style: none;
+  width: 365px;
+  min-width: 740px;
+  height: 68px;
+  display: table-cell;
+  float:left;
+  vertical-align: middle;  
+  
+  border: 1px solid #BBBBBB;
+  padding: 5px;
+  color: #5E5E5E;
+}
+
+#courseware91011 #lessonsList > li:hover {
+  background-color: #C7E8F5;
+}
+
+#courseware91011 #lessonsList a {
+  text-decoration: none;
+    width: 740px;
+  color: #5E5E5E;
+  cursor: pointer;
+  display: table-cell;
+}
+#courseware91011 #lessonsList a:hover, a:link, a:visited {
+  text-decoration: none;
+  color: #5E5E5E;
+  cursor: pointer;
+}
+
+#maincoursewarepage ul {
+  overflow: hidden;
+  display: table-row;
+  border: 1px solid #BBBBBB;
+}
+
+#maincoursewarepage #lessonsList > li {
+  list-style: none;
+  width: 350px;
+  min-width: 365px;
+  /* height: auto; */
+  height: 150px;
+  display: table-cell;
+  float:left;
+  vertical-align: top;  
+  font-size: 95%;
+  border: 1px solid #BBBBBB;
+  /* border-top : 1px solid #BBBBBB; */
+  padding: 5px;
+  color: #5E5E5E;
+}
+
+#maincoursewarepage img {
+/*	margin-top: 10px;
+	margin-bottom: auto; */
+	margin: 0px 10px 50px 0;
+	border: none;
+}
+
+#maincoursewarepage #lessonsList > li:hover {
+  background-color: #C7E8F5;
+}
+
+#maincoursewarepage #lessonsList a {
+  text-decoration: none;
+  width: 350px;
+  color: #5E5E5E;
+  cursor: pointer;
+  display: table-cell;
+}
+#maincoursewarepage #lessonsList a:hover, a:link, a:visited {
+  text-decoration: none;
+  color: #5E5E5E;
+  cursor: pointer;
+}
+
+#aboutuslist  {
+  padding-left: 0px;  
+  overflow: hidden;
+  display: table-row;
+}
+
+
+#aboutuslist > li {
+  list-style: none;
+  width: 350px;
+  min-width: 365px;
+  height: 175px;
+  display: table-cell;
+  float:left;
+  vertical-align: top;  
+  font-size: 95%;
+  padding: 5px;
+  color: #5E5E5E;
+}
+
+#aboutuslist .talllist{
+  height: 185px;
+}
+
+#aboutuslist img {
+	float: left;
+	margin: 20px 10px 50px 0;
+	border: none;
+}
+
+#global-message {
+Background-color: #147599; /*Change from red to teal - red #cd1443; */
+box-sizing: border-box;
+color: #ffffff;
+font-family: georgia, â€œdroid serifâ€, â€œTimes New Romanâ€, Times, serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+padding-bottom: 16px;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 16px;
+text-align: center;
+}
+
+#global-message strong{
+color: #ffffff;
+}
+
+#global-message a{
+color: #ffffff;
+text-decoration-line: underline
+}
+
+#footer-message{
+Background-color: ffffff; /*Change from red to teal to black - teal #147599; */
+box-sizing: border-box;
+color: #5E5E5E;
+/*font-family: georgia, â€œdroid serifâ€, â€œTimes New Romanâ€, Times, serif;*/
+font-size: 13px;
+font-weight: 400;
+line-height: 16.4px; /*changed from 22.4px*/
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+/*text-align: center; */
+}
+
+#footer-message a{
+color: #5E5E5E;
+text-decoration-line: underline;
+}
+
+.button { /* added by Josh - August, 2021. Right align buttons for Contest Supervisor Portal */
+  background-color: #207FA2; /* CEMC Blue darkened for accessibility */
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  	/*text-decoration: none;*/
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 15px;
+	font-weight: bold;
+  margin: 0px 0px 0px 5px;
+  float: right;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  width: 265px;
+	height: 80px;
+  /*text-shadow: 0px 0px #000000;*/
+  border: 10px solid white;
+}
+
+.button1 {
+  background-color: #5F7F2F; /* Green */
+  color: white; 
+  
+	}
+
+.button1:hover {
+  background-color: #56722a;
+  color: white;
+}
+
+.button2 {
+  background-color: #757575; /* Grey */
+  color: white; 
+}
+
+.button2:hover {
+  background-color: #696969;
+  color: white;
+}
+
+.button3 {
+  background-color: #9A6E0E; /* Dark Mustard Yellow */
+  color: white; 
+}
+
+.button3:hover {
+  background-color: #8b630d;
+  color: white;
+}
+
+.button4 {
+  background-color: #207FA2; /* Dark Blue */
+  color: white;
+
+}
+
+.button4:hover {
+	background-color: #185D77;
+	color: white;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.btn-group button { /*added by Josh - August, 2021. Group of buttons that are in a row */
+  background-color: #207FA2; /* CEMC Blue darkened for accessibility */
+  border: 5px solid white; /* White border */
+  color: white; /* White text */
+	font-size: 14px;
+	font-weight: bold;
+  padding: 10px 0px; /* Some padding */
+	height: 70px;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+	border-radius: 20px;
+	transition-duration: 0.2s;
+	margin: 0 auto;
+    display: block;
+	/*text-shadow: 1px 1px #000000;*/
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #185D77;
+}
+
+.btn-center button { /* button group/sinlge button that is not left algined */
+  background-color: #207FA2; /* CEMC Blue */
+  border: 10px solid white; /* White border */
+  color: white; /* White text */
+	font-size: 14px;
+	font-weight: normal;
+  padding: 10px 10px; /* Some padding */
+	height: 80px;
+  cursor: pointer; /* Pointer/hand icon */
+  /*float: left; *//* Float the buttons side by side */
+	border-radius: 25px;
+		transition-duration: 0.2s;
+	/*text-shadow: 1px 1px #000000;*/
+}
+
+
+.btn-center button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-center:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-center button:hover {
+  background-color: #185D77;
+}
+
+.btn-square button { /* added by Josh Sept 17, 2021 square button group/single button that is not left algined */
+  background-color: #207FA2; /* CEMC Blue */
+  border: 2px solid white; /* White border */
+  color: white; /* White text */
+	font-size: 14px;
+	font-weight: normal;
+  padding: 10px 7px; /* Some padding */
+	height:auto;
+  cursor: pointer; /* Pointer/hand icon */
+  /*float: left; *//* Float the buttons side by side */
+	border-radius: 0px;
+		transition-duration: 0.2s;
+	vertical-align: top; 
+		
+	/*text-shadow: 1px 1px #000000;*/
+}
+
+
+.btn-square button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-square:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-square button:hover {
+  background-color: #185D77;
+}
+
+/*Josh adding some accordions - April 7, 2022*/
+
+.hidecontent {
+    	display: none;
+	}
+	
+#myaccordion label {
+	border: 3px solid white;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;    
+	border-radius: 0px; /* 15px looks close to the buttons below */
+	padding: 13px 15px; /* 20px 20px looks close to the buttons below */
+	cursor: pointer;
+	background: #f0f0f0;/*CEMC dark blue: #207FA2* CEMC website green #ebf5c2*/
+	color: #444444;
+	transition: ease .5s;
+}
+#myaccordion label:hover {
+	background: #207FA2;
+	color: white; /* White text */
+}
+.content {
+	background: #ffff;
+	padding: 10px 25px;
+	border: 0px solid #d4d4d4;
+	margin: 10 0 0 0;
+}
+#myaccordion input:checked + label + .content {
+	display: block;
+	webkit-animation: fadeIn 0.5s ease-out;
+	-moz-animation: fadeIn 0.5s ease-out;
+	-o-animation: fadeIn 0.5s ease-out;
+	animation: fadeIn 0.5s ease-out;
+}
+@-webkit-keyframes fadeIn {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+	1% {
+		display: block;
+		opacity: 0;
+	}
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+/* Ryan adding accessible button-based accordions - Jan 16, 2023 */
+
+.accordion-trigger {
+	text-align: left;
+	width: 100%;
+	outline: none;
+	
+	border: 3px solid white;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;    
+	border-radius: 0px; /* 15px looks close to the buttons below */
+	padding: 0px; /* 20px 20px looks close to the buttons below */
+	cursor: pointer;
+	background: #f0f0f0;/*CEMC dark blue: #207FA2* CEMC website green #ebf5c2*/
+	color: #444444;
+	transition: ease .5s;
+}
+
+.accordion-trigger:focus,
+.accordion-trigger:hover,
+.accordion-title:focus,
+.accordion-title:hover {
+  	background: #207FA2;
+	color: white; /* White text */
+}
+
+.accordion-title {	
+	border: 3px solid white;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;    
+	border-radius: 0px; /* 15px looks close to the buttons below */
+	padding: 13px 15px; /* 20px 20px looks close to the buttons below */
+	cursor: pointer;
+	background: #f0f0f0;/*CEMC dark blue: #207FA2* CEMC website green #ebf5c2*/
+	color: #444444;
+	transition: ease .5s;
+	letter-spacing: 0.5px;
+	line-height: 18.2px;
+}
+
+.accordion-trigger:focus .accordion-title {
+  border-color: hsl(216deg 94% 43%);
+}
+
+.accordion-panel {
+  	background: #ffff;
+	padding: 10px 25px;
+	border: 0px solid #d4d4d4;
+	margin: 10 0 0 0;
+}
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+.accordion-panel[hidden] {
+  display: none;
+}
+
+.accordion {
+	margin-bottom: 25px;	
+}
+
+.accordion h3 {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+/* WIM header */
+#wimheader h1 {
+    float: left;
+    margin: 0 10px 0 10px;
+    padding: 0;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    color: #AA336A	;
+    font-size: 160%;
+    line-height: 1.2em;
+}

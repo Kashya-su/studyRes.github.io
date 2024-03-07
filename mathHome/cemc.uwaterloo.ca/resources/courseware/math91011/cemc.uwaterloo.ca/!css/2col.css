@@ -1,0 +1,7 @@
+/* Modifiers required for 2 column layout */
+#container {
+	background: url(../!images/shadow_sides_2col.gif) repeat-y center top;
+}
+#primarycontarea {
+	width: 768px; /* Feb 10, 2010 widened 188px */
+}

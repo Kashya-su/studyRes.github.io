@@ -1,0 +1,84 @@
+body {
+	font-size: 10pt;
+	background-color: #FFFFFF;
+	background-image: none;
+	width: 100%;
+}
+/* Sept 2, 2008 - Removed by JP
+#collage {
+	margin: 6pt 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+*/
+#header, #contentbar, #primarycontarea, #primarycontent, #footer {
+	padding: 0;
+	margin: 0;
+	width: 100% !important;
+	border: none;
+}
+#header {
+	padding-bottom: 6pt;
+	border-bottom: 1pt solid #000000;
+}
+/* Setpt 2 - 2008 Added by JP to be consistent with altered cemc.css. */
+#wordmark {
+	border-top: 1px solid #CCC;
+	margin-left: 170px; /* July, 2008 JP changed from 175px to better centre title. */
+	padding-top: 5px; 	/* July, 2008 JP added to better centre title. */
+}
+/* Sept 2, 2008 - now display search box */
+#primarynavarea, #secondnavarea {
+	display: none;
+}
+#contentbar {
+	background: #51C1D9 url(../!images/bar_image.jpg) repeat-x left top;
+	/* Sept 2, 2008 - Removed by JP to match altered cemc.css 
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #000000;
+	margin-bottom: 6pt;
+	*/
+	float: left; 	/* Sept 2, 2008 - Added by JP to match altered cemc.css. */
+	width: 590px;	/* Sept 2, 2008 - Added by JP to match altered cemc.css. */
+}
+#primarycontarea h1, #primarycontarea h2, #primarycontarea h3, #primarycontarea h4 {
+	color: #000000;
+	text-indent: 0;
+	padding-left: 0;
+	font-weight: bold;
+}
+#contentbar h1 {
+	color: #000000;
+	margin-left: 0;
+	font-weight: bold;
+}	
+#contentbar h2 {
+	color: #000000;
+	margin-left: 0;
+	font-weight: bold;
+}
+#footer {
+	border-top: 1pt #000000 solid;
+	margin-top: 6pt;
+	padding-top: 6pt;
+}
+#footer a {
+	color: #000000;
+	text-decoration: underline;
+}
+#haveyouseen {
+	display: none;
+}
+
+/* Sept 2, 2008 - Added by JP */
+#imagebanner, #collage, .homepageleft {
+	display: none;
+}
+#uwlogo {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 0px;
+}
